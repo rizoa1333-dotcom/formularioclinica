@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eef5f1">
+  <meta name="description" content="Formulario para reunir la información de tu consultorio dental y preparar tu página web.">
+  <title>Información para tu página web | Estudio Sonrisa</title>
+  <style>
+    :root{--ink:#173c3a;--green:#2f7167;--green2:#20564f;--muted:#697e79;--mint:#e7f1eb;--line:#dbe7e0;--paper:#fff;--peach:#f4dfd2;--shadow:0 18px 55px rgba(23,60,58,.08)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f7f9f6;color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55}a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}.container{width:min(1030px,calc(100% - 38px));margin-inline:auto}
+    .top{padding:22px 0}.brand{display:flex;align-items:center;gap:11px;font-weight:850;letter-spacing:-.02em}.mark{width:40px;height:40px;display:grid;place-items:center;border-radius:14px 14px 14px 5px;background:#dcece2;color:var(--green)}.mark svg{width:24px}.brand small{display:block;margin-top:-3px;color:var(--muted);font-size:.64rem;letter-spacing:.14em;text-transform:uppercase}
+    .hero{position:relative;overflow:hidden;padding:48px 0 47px;background:radial-gradient(ellipse at 85% 18%,rgba(209,231,217,.77),transparent 35%),linear-gradient(120deg,#fcf8f2,#eef5f1)}.hero:after{content:"";position:absolute;right:-120px;bottom:-270px;width:440px;height:440px;border:1px solid rgba(47,113,103,.15);border-radius:50%;box-shadow:0 0 0 35px rgba(47,113,103,.025),0 0 0 75px rgba(47,113,103,.02)}.hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:1fr auto;align-items:center;gap:40px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--green);font-size:.75rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase}.eyebrow:before{content:"";width:22px;height:2px;border-radius:2px;background:#d89b79}h1{max-width:700px;margin:14px 0 14px;font:500 clamp(2.5rem,6vw,4.1rem)/1.02 Georgia,"Times New Roman",serif;letter-spacing:-.045em}.hero p{max-width:650px;margin:0;color:#617773;font-size:1.02rem}.hero-badge{width:142px;height:142px;display:grid;place-items:center;border:1px solid rgba(47,113,103,.18);border-radius:50%;color:var(--green);text-align:center}.hero-badge span{width:115px;height:115px;display:grid;align-content:center;justify-items:center;border-radius:50%;background:rgba(255,255,255,.7);font:500 1.3rem/1.1 Georgia,serif}.hero-badge small{display:block;margin-top:8px;color:var(--muted);font:700 .64rem/1.3 Inter,system-ui,sans-serif;letter-spacing:.07em;text-transform:uppercase}
+    .progress-wrap{padding:27px 0 18px}.progress-label{display:flex;justify-content:space-between;color:var(--muted);font-size:.78rem;font-weight:700}.progress{height:6px;margin-top:9px;overflow:hidden;border-radius:99px;background:#e4ebe6}.progress i{display:block;width:0;height:100%;border-radius:inherit;background:var(--green);transition:width .3s}
+    form{padding-bottom:50px}.card{margin:0 0 17px;padding:29px 32px;border:1px solid var(--line);border-radius:22px;background:#fff;box-shadow:0 7px 22px rgba(23,60,58,.025)}.card-head{display:flex;align-items:flex-start;gap:14px;margin-bottom:23px}.step{flex:0 0 34px;height:34px;display:grid;place-items:center;border-radius:12px;background:var(--mint);color:var(--green);font-size:.84rem;font-weight:850}.card h2{margin:0;font:500 1.5rem/1.18 Georgia,serif;letter-spacing:-.025em}.card-head p{margin:5px 0 0;color:var(--muted);font-size:.83rem}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:grid;align-content:start;gap:7px}.field.full{grid-column:1/-1}.field label,.legend{font-size:.79rem;font-weight:760;color:#47635e}.optional{color:#91a09c;font-weight:500}.field input,.field select,.field textarea{width:100%;min-height:47px;padding:11px 13px;border:1px solid #d8e4dd;border-radius:11px;background:#fbfdfb;color:var(--ink);font-size:.88rem}.field textarea{min-height:100px;resize:vertical}.field input::placeholder,.field textarea::placeholder{color:#9aaba5}.field input:focus,.field select:focus,.field textarea:focus{outline:3px solid rgba(47,113,103,.14);border-color:var(--green)}.hint{margin:0;color:#899993;font-size:.72rem}.checks{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:8px}.check{position:relative}.check input{position:absolute;opacity:0;pointer-events:none}.check label{display:flex;align-items:center;gap:9px;min-height:43px;padding:9px 11px;border:1px solid var(--line);border-radius:11px;color:#526c67;font-size:.79rem;font-weight:620;cursor:pointer;transition:.15s}.check label:before{content:"";width:16px;height:16px;flex:0 0 16px;border:1px solid #b7c9c0;border-radius:5px;background:#fff}.check input:checked+label{border-color:#8cb8a0;background:#f3f8f4;color:var(--green2)}.check input:checked+label:before{content:"✓";display:grid;place-items:center;border-color:var(--green);background:var(--green);color:#fff;font-size:.68rem;font-weight:900}.check input:focus-visible+label{outline:3px solid rgba(47,113,103,.2);outline-offset:2px}.privacy{display:flex;align-items:flex-start;gap:10px;margin:19px 0 20px;color:#687d78;font-size:.78rem}.privacy input{margin-top:4px;accent-color:var(--green)}.submit-row{display:flex;align-items:center;justify-content:space-between;gap:15px}.submit{min-height:53px;display:inline-flex;align-items:center;justify-content:center;gap:11px;padding:0 23px;border:0;border-radius:999px;background:var(--green);color:#fff;font-weight:800;box-shadow:0 9px 19px rgba(47,113,103,.2);cursor:pointer;transition:transform .2s,background .2s}.submit:hover{transform:translateY(-2px);background:var(--green2)}.submit svg{width:19px}.submit-note{max-width:365px;color:var(--muted);font-size:.74rem}.alert{display:none;margin-top:17px;padding:14px 16px;border:1px solid #b9d8c5;border-radius:13px;background:#eff8f1;color:#285e4e;font-size:.85rem}.alert.show{display:block}.alert strong{display:block;margin-bottom:3px}.alert a{text-decoration:underline;font-weight:800}.footer{padding:25px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.75rem}.footer-inner{display:flex;justify-content:space-between;gap:12px}
+    @media(max-width:700px){.hero{padding:38px 0}.hero-inner{grid-template-columns:1fr;gap:22px}.hero-badge{display:none}.card{padding:23px 18px}.grid{grid-template-columns:1fr}.field.full{grid-column:auto}.checks{grid-template-columns:1fr 1fr}.submit-row{align-items:flex-start;flex-direction:column}.submit{width:100%}.footer-inner{flex-direction:column}}
+    @media(max-width:420px){.checks{grid-template-columns:1fr}.container{width:calc(100% - 28px)}}
+  </style>
+</head>
+<body>
+  <div class="container top"><a class="brand" href="#inicio"><span class="mark"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.2 5.8c2.1-.9 4.1 1 6.8 1s4.7-1.9 6.8-1c4.3 1.8 2.2 7.7 1.4 10.4-1.2 4-2.1 9.2-4.6 9.2-2.1 0-1.4-6.8-3.6-6.8s-1.5 6.8-3.6 6.8c-2.5 0-3.4-5.2-4.6-9.2-.8-2.7-2.9-8.6 1.4-10.4Z"/></svg></span><span>Estudio Sonrisa<small>Diseño web dental</small></span></a></div>
+  <section class="hero" id="inicio"><div class="container hero-inner"><div><span class="eyebrow">Empecemos tu página web</span><h1>Cuéntame de tu consultorio.</h1><p>Completa este formulario con calma. Con esta información prepararé una propuesta para que tu página represente bien a tu clínica y facilite que nuevos pacientes te contacten.</p></div><div class="hero-badge"><span>Tu marca,<br>tu historia<small>En tu propia web</small></span></div></div></section>
+  <main class="container">
+    <div class="progress-wrap"><div class="progress-label"><span>Tu información para el sitio</span><span id="progressText">0% completado</span></div><div class="progress"><i id="progressBar"></i></div></div>
+    <form id="intakeForm">
+      <section class="card"><div class="card-head"><span class="step">01</span><div><h2>Datos de contacto</h2><p>¿Con quién coordinamos el proyecto?</p></div></div><div class="grid">
+        <div class="field"><label for="contactName">Tu nombre completo *</label><input id="contactName" name="Tu nombre" autocomplete="name" placeholder="Nombre y apellido" required></div>
+        <div class="field"><label for="role">Tu puesto o relación con el consultorio *</label><input id="role" name="Puesto" placeholder="Dueño, administrador, doctor(a)…" required></div>
+        <div class="field"><label for="phone">Teléfono / WhatsApp de la clínica *</label><input id="phone" name="Teléfono de la clínica" type="tel" autocomplete="tel" placeholder="Con lada" required></div>
+        <div class="field"><label for="email">Correo de contacto *</label><input id="email" name="Correo" type="email" autocomplete="email" placeholder="nombre@consultorio.com" required></div>
+      </div></section>
+      <section class="card"><div class="card-head"><span class="step">02</span><div><h2>Información del consultorio</h2><p>Los datos que verán tus futuros pacientes.</p></div></div><div class="grid">
+        <div class="field"><label for="clinic">Nombre del consultorio *</label><input id="clinic" name="Nombre del consultorio" placeholder="Ej. Clínica Dental del Valle" required></div>
+        <div class="field"><label for="doctor">Nombre del doctor(a) principal <span class="optional">(opcional)</span></label><input id="doctor" name="Doctor(a) principal" placeholder="Nombre y apellidos"></div>
+        <div class="field"><label for="city">Ciudad y estado *</label><input id="city" name="Ciudad y estado" autocomplete="address-level2" placeholder="Ciudad de México, CDMX" required></div>
+        <div class="field"><label for="address">Dirección completa *</label><input id="address" name="Dirección" autocomplete="street-address" placeholder="Calle, número, colonia, código postal" required></div>
+        <div class="field full"><label for="map">Enlace de Google Maps <span class="optional">(opcional)</span></label><input id="map" name="Google Maps" type="url" placeholder="Pega aquí el enlace para llegar al consultorio"></div>
+        <div class="field"><label for="weekdayHours">Horario de lunes a viernes *</label><input id="weekdayHours" name="Horario entre semana" placeholder="Ej. 9:00 a 19:00" required></div>
+        <div class="field"><label for="saturdayHours">Horario del sábado <span class="optional">(opcional)</span></label><input id="saturdayHours" name="Horario sábado" placeholder="Ej. 9:00 a 14:00 / Cerrado"></div>
+        <div class="field full"><span class="legend">¿Qué servicios ofrece el consultorio? * <span class="optional">(elige todos los que apliquen)</span></span><div class="checks" id="services">
+          <div class="check"><input id="s1" type="checkbox" name="Servicios" value="Limpieza y prevención"><label for="s1">Limpieza y prevención</label></div><div class="check"><input id="s2" type="checkbox" name="Servicios" value="Odontología general"><label for="s2">Odontología general</label></div><div class="check"><input id="s3" type="checkbox" name="Servicios" value="Ortodoncia"><label for="s3">Ortodoncia</label></div><div class="check"><input id="s4" type="checkbox" name="Servicios" value="Endodoncia"><label for="s4">Endodoncia</label></div><div class="check"><input id="s5" type="checkbox" name="Servicios" value="Odontopediatría"><label for="s5">Odontopediatría</label></div><div class="check"><input id="s6" type="checkbox" name="Servicios" value="Implantes"><label for="s6">Implantes</label></div><div class="check"><input id="s7" type="checkbox" name="Servicios" value="Estética dental"><label for="s7">Estética dental</label></div><div class="check"><input id="s8" type="checkbox" name="Servicios" value="Urgencias"><label for="s8">Urgencias</label></div><div class="check"><input id="s9" type="checkbox" name="Servicios" value="Otro servicio"><label for="s9">Otro servicio</label></div>
+        </div></div><div class="field full"><label for="otherServices">Otro servicio o especialidad <span class="optional">(opcional)</span></label><input id="otherServices" name="Otro servicio" placeholder="Especifica aquí"></div>
+      </div></section>
+      <section class="card"><div class="card-head"><span class="step">03</span><div><h2>La personalidad de tu clínica</h2><p>Esto ayuda a que el sitio suene y se sienta como tú.</p></div></div><div class="grid">
+        <div class="field full"><label for="about">Cuéntame brevemente sobre el consultorio *</label><textarea id="about" name="Sobre el consultorio" placeholder="¿Cuándo abrió? ¿Qué experiencia tiene el equipo? ¿Qué les importa al atender?" required></textarea></div>
+        <div class="field full"><label for="difference">¿Qué hace diferente a tu consultorio? *</label><textarea id="difference" name="Diferenciadores" placeholder="Atención sin prisas, tecnología, experiencia, ubicación, trato familiar…" required></textarea></div>
+        <div class="field full"><label for="audience">¿A qué tipo de pacientes quieren llegar? <span class="optional">(opcional)</span></label><input id="audience" name="Pacientes ideales" placeholder="Familias, adultos, niños, pacientes de ortodoncia…"></div>
+        <div class="field full"><label for="social">Redes sociales o sitio actual <span class="optional">(opcional)</span></label><textarea id="social" name="Redes y sitio actual" placeholder="Instagram, Facebook, TikTok, página actual…"></textarea></div>
+      </div></section>
+      <section class="card"><div class="card-head"><span class="step">04</span><div><h2>Material para el diseño</h2><p>Si todavía no lo tienes todo, lo podemos resolver después.</p></div></div><div class="grid">
+        <div class="field full"><label for="assets">Enlaces a logo, fotos del consultorio o del equipo <span class="optional">(opcional)</span></label><textarea id="assets" name="Material gráfico" placeholder="Comparte enlaces de Google Drive, Dropbox u otra carpeta. Verifica que permitan ver los archivos."></textarea><p class="hint">Evita incluir fotografías o datos sensibles de pacientes.</p></div>
+        <div class="field full"><label for="references">Páginas web que te gustan o estilo que buscas <span class="optional">(opcional)</span></label><textarea id="references" name="Referencias de diseño" placeholder="Pega enlaces y dime qué te gusta de cada uno."></textarea></div>
+        <div class="field full"><label for="notes">¿Hay algo más que deba saber? <span class="optional">(opcional)</span></label><textarea id="notes" name="Notas adicionales" placeholder="Promociones, preguntas frecuentes, formas de pago, prioridades…"></textarea></div>
+      </div></section>
+      <label class="privacy"><input type="checkbox" id="consent" required><span>Autorizo que esta información se use para preparar una propuesta de sitio web y acepto enviarla por WhatsApp. No incluyo información clínica ni datos de pacientes. *</span></label>
+      <div class="submit-row"><button class="submit" type="submit">Enviar información por WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5Z"/><path d="M8.5 9.5c.5 2 2 3.5 4 4l1-1 2 .8-.2 1.5c-.1.5-.6.8-1.1.8-3.4-.3-6.3-3.2-6.6-6.6 0-.5.3-1 .8-1.1l1.5-.2.8 2-1 1Z"/></svg></button><span class="submit-note">Se abrirá WhatsApp con el mensaje listo para que el dueño lo envíe. Podrá revisar las respuestas antes de mandarlas.</span></div>
+      <div class="alert" id="alert" role="status" aria-live="polite"></div>
+    </form>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><span>Formulario de información · Diseño web para consultorios dentales</span><span>Gracias por compartir los detalles de tu clínica.</span></div></footer>
+  <script>
+    // Cambia este valor por tu WhatsApp, con código de país y solo números.
+    // México: 52 + número de 10 dígitos. Ejemplo: 525512345678
+    const WHATSAPP_DESTINATION = "523121301972";
+    const form = document.getElementById('intakeForm');
+    const alertBox = document.getElementById('alert');
+    const progressBar = document.getElementById('progressBar');
+    const progressText = document.getElementById('progressText');
+    const requiredFields = [...form.querySelectorAll('[required]')];
+    function updateProgress(){
+      let complete=0;
+      requiredFields.forEach(field=>{
+        if(field.type==='checkbox'&&field.name==='Servicios') return;
+        if(field.type==='checkbox'&&field.checked) complete++;
+        else if(field.type!=='checkbox'&&field.value.trim()) complete++;
+      });
+      if(document.querySelector('#services input:checked')) complete++;
+      const percent=Math.round(complete/(requiredFields.filter(f=>f.type!=='checkbox'||f.id==='consent').length+1)*100);
+      progressBar.style.width=`${Math.min(percent,100)}%`;progressText.textContent=`${Math.min(percent,100)}% completado`;
+    }
+    form.addEventListener('input',updateProgress);form.addEventListener('change',updateProgress);
+    form.addEventListener('submit',event=>{
+      event.preventDefault();
+      if(!form.reportValidity()) return;
+      const services=[...document.querySelectorAll('#services input:checked')].map(input=>input.value);
+      if(!services.length){document.getElementById('services').scrollIntoView({behavior:'smooth',block:'center'});document.getElementById('s1').focus();return;}
+      const destination=WHATSAPP_DESTINATION.replace(/\D/g,'');
+      if(destination.length<10||destination==='TU_NUMERO_AQUI'){
+        alertBox.innerHTML='<strong>Falta configurar el WhatsApp de destino.</strong>En el archivo, reemplaza <code>TU_NUMERO_AQUI</code> por tu número con código de país y solo dígitos. Después de guardarlo, el botón abrirá WhatsApp con las respuestas.';
+        alertBox.classList.add('show');alertBox.scrollIntoView({behavior:'smooth',block:'center'});return;
+      }
+      const lines=['*INFORMACIÓN PARA PÁGINA WEB DE CONSULTORIO DENTAL*',''];
+      const data=new FormData(form);
+      for(const [key,value] of data.entries()){
+        if(key==='Servicios') continue;
+        if(typeof value==='string'&&value.trim()) lines.push(`*${key}:* ${value.trim()}`);
+      }
+      lines.push(`*Servicios:* ${services.join(', ')}`);
+      const message=encodeURIComponent(lines.join('\n'));
+      const url=`https://wa.me/${destination}?text=${message}`;
+      window.open(url,'_blank','noopener,noreferrer');
+      alertBox.innerHTML='<strong>WhatsApp está listo.</strong>Se abrió una conversación con el resumen. Revisa las respuestas y pulsa enviar en WhatsApp para compartirlas.';
+      alertBox.classList.add('show');alertBox.scrollIntoView({behavior:'smooth',block:'center'});
+    });
+    updateProgress();
+  </script>
+</body>
+</html>
